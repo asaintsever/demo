@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-backstage"
+  namespace: "arch"
+  description: "Service component to assess Backstage"
+  annotations:
+    github.com/project-slug: "asaintsever/test-grpc-backstage"
+    backstage.io/techdocs-ref: github:https://github.com/asaintsever/test-grpc-backstage
+    backstage.io/kubernetes-id: test-arch
+spec:
+  type: service
+  lifecycle: experimental
+  owner: asaintsever
+  implementsApis:
+    - quote

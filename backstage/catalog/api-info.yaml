@@ -1,0 +1,64 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: quote
+  namespace: "arch"
+  description: Quote API
+  tags:
+    - quote
+    - rest
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: asaintsever
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 0.1.0
+      title: Quote Service API
+      description: Quote Service API
+    servers:
+      - url: http://public-api.apigw.arch.datapwn.com
+    paths:
+      /:
+        get:
+          summary: Return a randomly selected quote.
+          responses:
+            '200':
+              description: A JSON object with a quote and some additional metadata.
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    properties:
+                      server: 
+                        type: string
+                      quote: 
+                        type: string
+                      time: 
+                        type: string
+      /debug/:
+        get:
+          summary: Return debug information about the request.
+          responses:
+            '200':
+              description: A JSON object with debug information about the request and additional metadata.
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    properties:
+                      server: 
+                        type: string
+                      time: 
+                        type: string
+                      host: 
+                        type: string
+                      proto: 
+                        type: string
+                      url:  
+                        type: object
+                      remoteaddr: 
+                        type: string
+                      headers: 
+                        type: object

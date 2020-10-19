@@ -13,4 +13,4 @@ spec:
   lifecycle: experimental
   owner: asaintsever
   implementsApis:
-    - arch/quote
+    - quote

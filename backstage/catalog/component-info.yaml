@@ -4,6 +4,10 @@ metadata:
   name: "test-backstage"
   namespace: "arch"
   description: "Service component to assess Backstage"
+  tags:
+    - java
+    - quote
+    - talend
   annotations:
     github.com/project-slug: "asaintsever/test-grpc-backstage"
     backstage.io/techdocs-ref: github:https://github.com/asaintsever/test-grpc-backstage

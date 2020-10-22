@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: quote
+  namespace: arch
   description: Quote API
   tags:
     - quote

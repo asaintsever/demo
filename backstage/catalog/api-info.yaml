@@ -10,7 +10,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: asaintsever
+  owner: user:asaintsever
   definition: |
     openapi: "3.0.0"
     info:

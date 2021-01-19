@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: quote
-  namespace: arch
+  namespace: default
   description: Quote API
   tags:
     - quote
@@ -10,7 +10,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: user:asaintsever
+  owner: asaintsever
   definition: |
     openapi: "3.0.0"
     info:

@@ -16,5 +16,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: user:asaintsever
-  implementsApis:
+  providesApis:
     - quote

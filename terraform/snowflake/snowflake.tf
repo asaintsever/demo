@@ -30,7 +30,7 @@ provider "snowflake" {
 locals { 
   snowflake = {
     test_db = "ALS_TEST"
-    test_schema = "PUBLIC"
+    test_schema = "TEST"
   }
 }
 
